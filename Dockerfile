@@ -17,7 +17,7 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Nginx 설정 파일 복사
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY  ./nginx.conf /etc/nginx/nginx.conf
 
 # Supervisor 설정 파일 복사
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf

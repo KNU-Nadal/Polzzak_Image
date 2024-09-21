@@ -4,7 +4,7 @@ import os
 import uuid  # UUID를 사용하여 고유한 파일 이름 생성
 
 app = Flask(__name__)
-app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 100  # 최대 100MB로 설정
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1000  # 최대 100MB로 설정
 # 이미지 업로드 경로
 UPLOAD_FOLDER = '/usr/share/nginx/html/images/'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER

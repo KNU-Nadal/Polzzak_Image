@@ -30,7 +30,6 @@ RUN mkdir -p /usr/share/nginx/html/images
 
 # 컨테이너가 80 포트를 사용할 수 있도록 설정
 EXPOSE 80
-EXPOSE 5000
 
 # FLASK_APP 환경 변수를 설정
 ENV FLASK_APP=app.py
